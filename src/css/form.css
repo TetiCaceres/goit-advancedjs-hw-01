@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+.feedback-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  font-family: "Montserrat", sans-serif;
+  
+}
+.feedback-form label {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+  height: 192px;
+  
+  color: #2e2f42;;
+}
+.feedback-form input[type='email'],
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #7a7a7a;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+  outline: none;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+}
+
+.feedback-form input[type='email']::placeholder,
+.feedback-form textarea::placeholder {
+  color: #7a7a7a;
+}
+
+/* 2. Hover state (При наведенні мишкою) */
+.feedback-form input[type='email']:hover,
+.feedback-form textarea:hover {
+  border-color: #000000; /* Рамка стає чіткою чорною */
+}
+
+/* 3. Active / Focus state (Коли користувач друкує) */
+.feedback-form input[type='email']:focus,
+.feedback-form textarea:focus {
+  border-color: #7a7a7a; /* Рамка залишається стандартною */
+  box-shadow: 0 0 0 1px #7a7a7a; /* Ефект легкого потовщення або внутрішнього акценту */
+}
+
+/* 1. Normal state */
+.feedback-form button[type='submit'] {
+  align-self: flex-start;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #5570f1; /* Фірмовий синьо-фіолетовий колір з макету */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+/* 2. Hover state */
+.feedback-form button[type='submit']:hover {
+  background-color: #7089f5; /* Трохи світліший відтінок при наведенні */
+}
